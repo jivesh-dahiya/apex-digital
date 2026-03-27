@@ -1,0 +1,557 @@
+{
+  "designAnalysis": {
+    "name": "Boostim Agency Design System",
+    "version": "1.0.0",
+    "description": "Modern, clean, and professional design system extracted from Boostim agency website with emphasis on bold typography, minimalist aesthetics, and strategic use of accent colors",
+    
+    "colorPalette": {
+      "primary": {
+        "black": "#000000",
+        "darkGray": "#1a1a1a",
+        "mediumGray": "#666666",
+        "lightGray": "#f5f5f5",
+        "white": "#ffffff",
+        "usage": "Main text, backgrounds, cards, and primary UI elements"
+      },
+      "accent": {
+        "neonGreen": "#b4ff39",
+        "limeGreen": "#a8e63d",
+        "chartGreen": "#8bc34a",
+        "usage": "CTAs, highlights, charts, play buttons, and interactive elements"
+      },
+      "neutral": {
+        "offWhite": "#fafafa",
+        "lightBeige": "#f8f8f8",
+        "warmGray": "#e8e8e8",
+        "borderGray": "#e0e0e0",
+        "usage": "Backgrounds, sections, subtle borders"
+      },
+      "text": {
+        "primary": "#000000",
+        "secondary": "#666666",
+        "tertiary": "#999999",
+        "onDark": "#ffffff",
+        "usage": "Text hierarchy across different backgrounds"
+      }
+    },
+
+    "typography": {
+      "fontFamilies": {
+        "primary": {
+          "name": "Inter, system-ui, -apple-system, sans-serif",
+          "weights": [400, 500, 600, 700],
+          "usage": "Body text, UI elements, general content"
+        },
+        "display": {
+          "name": "Inter, sans-serif",
+          "weights": [600, 700, 800],
+          "usage": "Large headings, hero titles, impactful statements"
+        }
+      },
+      "scale": {
+        "hero": {
+          "fontSize": "clamp(3rem, 8vw, 5.5rem)",
+          "lineHeight": "1.1",
+          "fontWeight": 700,
+          "letterSpacing": "-0.03em",
+          "usage": "Main hero headlines"
+        },
+        "h1": {
+          "fontSize": "clamp(2.5rem, 6vw, 4rem)",
+          "lineHeight": "1.15",
+          "fontWeight": 700,
+          "letterSpacing": "-0.02em"
+        },
+        "h2": {
+          "fontSize": "clamp(2rem, 5vw, 3rem)",
+          "lineHeight": "1.2",
+          "fontWeight": 600,
+          "letterSpacing": "-0.015em"
+        },
+        "h3": {
+          "fontSize": "1.5rem",
+          "lineHeight": "1.3",
+          "fontWeight": 600
+        },
+        "body": {
+          "fontSize": "1.0625rem",
+          "lineHeight": "1.7",
+          "fontWeight": 400
+        },
+        "bodySmall": {
+          "fontSize": "0.9375rem",
+          "lineHeight": "1.6",
+          "fontWeight": 400
+        },
+        "caption": {
+          "fontSize": "0.875rem",
+          "lineHeight": "1.5",
+          "fontWeight": 400
+        }
+      }
+    },
+
+    "layout": {
+      "heroSection": {
+        "structure": "Split layout with text on left (50-60%) and visual elements on right (40-50%)",
+        "minHeight": "90vh to 100vh",
+        "padding": "clamp(3rem, 8vw, 6rem) clamp(2rem, 5vw, 4rem)",
+        "alignment": "Left-aligned text with right-floating imagery",
+        "background": "Clean white or very light gray gradient"
+      },
+      "contentSections": {
+        "padding": "clamp(4rem, 10vw, 8rem) 0",
+        "maxWidth": "1400px",
+        "margin": "0 auto",
+        "gap": "clamp(3rem, 6vw, 5rem)"
+      },
+      "grid": {
+        "statsCards": "repeat(auto-fit, minmax(280px, 1fr))",
+        "contentCards": "repeat(auto-fit, minmax(320px, 1fr))",
+        "gap": "2rem to 3rem"
+      }
+    },
+
+    "components": {
+      "buttons": {
+        "primary": {
+          "background": "#000000",
+          "color": "#ffffff",
+          "padding": "1rem 2.5rem",
+          "borderRadius": "50px",
+          "fontSize": "1rem",
+          "fontWeight": 600,
+          "border": "none",
+          "transition": "all 0.3s ease",
+          "hover": {
+            "background": "#1a1a1a",
+            "transform": "translateY(-2px)",
+            "boxShadow": "0 8px 20px rgba(0, 0, 0, 0.15)"
+          },
+          "icon": {
+            "position": "right",
+            "size": "20px",
+            "marginLeft": "0.75rem"
+          }
+        },
+        "secondary": {
+          "background": "transparent",
+          "color": "#000000",
+          "padding": "1rem 2rem",
+          "borderRadius": "50px",
+          "fontSize": "1rem",
+          "fontWeight": 500,
+          "border": "1.5px solid #e0e0e0",
+          "hover": {
+            "borderColor": "#000000",
+            "background": "#fafafa"
+          }
+        },
+        "playButton": {
+          "background": "#b4ff39",
+          "color": "#000000",
+          "size": "80px to 100px",
+          "borderRadius": "50%",
+          "display": "flex center",
+          "boxShadow": "0 8px 24px rgba(180, 255, 57, 0.4)",
+          "hover": {
+            "transform": "scale(1.1)",
+            "boxShadow": "0 12px 32px rgba(180, 255, 57, 0.5)"
+          }
+        }
+      },
+
+      "cards": {
+        "statsCard": {
+          "background": "#000000",
+          "color": "#ffffff",
+          "borderRadius": "24px to 32px",
+          "padding": "2.5rem to 3rem",
+          "minHeight": "280px",
+          "display": "flex column",
+          "justifyContent": "space-between",
+          "boxShadow": "0 4px 16px rgba(0, 0, 0, 0.1)",
+          "number": {
+            "fontSize": "clamp(3rem, 6vw, 4.5rem)",
+            "fontWeight": 700,
+            "color": "#ffffff",
+            "lineHeight": "1"
+          },
+          "label": {
+            "fontSize": "1rem",
+            "fontWeight": 400,
+            "color": "rgba(255, 255, 255, 0.8)",
+            "marginTop": "1rem"
+          },
+          "accent": {
+            "color": "#b4ff39",
+            "usage": "Plus signs, icons, highlights"
+          }
+        },
+        "contentCard": {
+          "background": "#ffffff",
+          "borderRadius": "20px to 28px",
+          "padding": "2rem to 2.5rem",
+          "border": "1px solid #e8e8e8",
+          "boxShadow": "0 2px 12px rgba(0, 0, 0, 0.04)",
+          "transition": "all 0.3s ease",
+          "hover": {
+            "transform": "translateY(-8px)",
+            "boxShadow": "0 12px 32px rgba(0, 0, 0, 0.08)",
+            "borderColor": "#d0d0d0"
+          }
+        },
+        "imageCard": {
+          "borderRadius": "20px to 32px",
+          "overflow": "hidden",
+          "aspectRatio": "16/9 or 4/3",
+          "boxShadow": "0 8px 24px rgba(0, 0, 0, 0.12)",
+          "overlay": {
+            "background": "linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.6) 100%)",
+            "position": "absolute bottom"
+          }
+        }
+      },
+
+      "navigation": {
+        "navbar": {
+          "position": "fixed top",
+          "background": "rgba(255, 255, 255, 0.95)",
+          "backdropFilter": "blur(12px)",
+          "borderBottom": "1px solid rgba(0, 0, 0, 0.06)",
+          "padding": "1.25rem clamp(2rem, 5vw, 4rem)",
+          "zIndex": 1000
+        },
+        "logo": {
+          "display": "flex items-center",
+          "fontSize": "1.25rem",
+          "fontWeight": 700,
+          "color": "#000000",
+          "icon": {
+            "size": "32px to 40px",
+            "marginRight": "0.75rem",
+            "color": "#b4ff39"
+          }
+        },
+        "links": {
+          "fontSize": "0.9375rem",
+          "fontWeight": 500,
+          "color": "#666666",
+          "padding": "0.5rem 1rem",
+          "transition": "color 0.2s ease",
+          "hover": {
+            "color": "#000000"
+          },
+          "dropdown": {
+            "indicator": "chevron down icon",
+            "size": "16px"
+          }
+        }
+      },
+
+      "badges": {
+        "trustBadge": {
+          "display": "inline-flex items-center",
+          "gap": "0.75rem",
+          "padding": "0.5rem 1rem",
+          "background": "rgba(0, 0, 0, 0.04)",
+          "borderRadius": "50px",
+          "fontSize": "0.875rem",
+          "fontWeight": 500,
+          "color": "#666666"
+        },
+        "companyLogos": {
+          "display": "flex items-center",
+          "gap": "1.5rem to 2rem",
+          "opacity": "0.6",
+          "filter": "grayscale(100%)",
+          "transition": "all 0.3s ease",
+          "hover": {
+            "opacity": "1",
+            "filter": "grayscale(0%)"
+          }
+        }
+      },
+
+      "iconElements": {
+        "circleIcon": {
+          "size": "60px to 80px",
+          "background": "#000000",
+          "borderRadius": "50%",
+          "display": "flex center",
+          "color": "#b4ff39",
+          "boxShadow": "0 4px 16px rgba(0, 0, 0, 0.15)",
+          "icon": {
+            "size": "28px to 36px",
+            "strokeWidth": "2px"
+          }
+        },
+        "floatingIcon": {
+          "position": "absolute",
+          "animation": "float 3s ease-in-out infinite",
+          "boxShadow": "0 8px 24px rgba(0, 0, 0, 0.12)"
+        }
+      },
+
+      "charts": {
+        "barChart": {
+          "bars": {
+            "background": "#b4ff39",
+            "borderRadius": "8px 8px 0 0",
+            "gap": "0.5rem",
+            "minHeight": "100px",
+            "maxHeight": "200px"
+          },
+          "container": {
+            "background": "#000000",
+            "padding": "2rem",
+            "borderRadius": "20px"
+          }
+        }
+      },
+
+      "avatarGroup": {
+        "display": "flex items-center",
+        "avatars": {
+          "size": "48px to 56px",
+          "borderRadius": "50%",
+          "border": "3px solid #ffffff",
+          "marginLeft": "-12px",
+          "boxShadow": "0 2px 8px rgba(0, 0, 0, 0.1)"
+        },
+        "plusButton": {
+          "size": "48px to 56px",
+          "background": "rgba(180, 255, 57, 0.2)",
+          "color": "#000000",
+          "borderRadius": "50%",
+          "fontSize": "1.5rem",
+          "fontWeight": 600
+        }
+      }
+    },
+
+    "visualElements": {
+      "mockups": {
+        "laptop": {
+          "perspective": "slight 3D tilt",
+          "shadow": "0 20px 60px rgba(0, 0, 0, 0.15)",
+          "borderRadius": "8px",
+          "screen": {
+            "content": "charts, graphs, analytics",
+            "glow": "subtle screen glow effect"
+          }
+        },
+        "positioning": "floating with subtle rotation",
+        "layering": "overlapping elements with depth"
+      },
+      
+      "imagery": {
+        "teamPhotos": {
+          "style": "natural, candid, professional",
+          "treatment": "slight desaturation or color overlay",
+          "borderRadius": "20px to 32px",
+          "overlay": "text overlay with gradient"
+        },
+        "textOverlay": {
+          "fontSize": "clamp(2rem, 5vw, 4rem)",
+          "fontWeight": 700,
+          "color": "#ffffff",
+          "letterSpacing": "0.1em to 0.15em",
+          "textTransform": "uppercase",
+          "position": "centered on image"
+        }
+      },
+
+      "decorativeElements": {
+        "floatingCards": {
+          "position": "absolute",
+          "animation": "float and subtle rotation",
+          "zIndex": "layered for depth",
+          "shadow": "0 12px 40px rgba(0, 0, 0, 0.12)"
+        },
+        "backgroundShapes": {
+          "display": "minimal or none",
+          "style": "clean, no clutter"
+        }
+      }
+    },
+
+    "animations": {
+      "transitions": {
+        "default": "0.3s ease",
+        "smooth": "0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+        "bounce": "0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55)"
+      },
+      "hover": {
+        "cardLift": "translateY(-8px to -12px)",
+        "buttonLift": "translateY(-2px to -4px)",
+        "scale": "scale(1.05 to 1.1)",
+        "shadow": "increase shadow intensity"
+      },
+      "float": {
+        "keyframes": "0%: translateY(0), 50%: translateY(-10px), 100%: translateY(0)",
+        "duration": "3s to 6s",
+        "easing": "ease-in-out",
+        "iteration": "infinite"
+      },
+      "fadeIn": {
+        "from": "opacity: 0, translateY(20px)",
+        "to": "opacity: 1, translateY(0)",
+        "duration": "0.6s to 0.8s",
+        "easing": "ease-out"
+      }
+    },
+
+    "spacing": {
+      "scale": {
+        "xs": "0.25rem",
+        "sm": "0.5rem",
+        "md": "1rem",
+        "lg": "1.5rem",
+        "xl": "2rem",
+        "2xl": "3rem",
+        "3xl": "4rem",
+        "4xl": "5rem",
+        "5xl": "6rem",
+        "6xl": "8rem"
+      },
+      "sectionGap": "clamp(4rem, 10vw, 8rem)",
+      "cardGap": "clamp(1.5rem, 3vw, 3rem)",
+      "elementGap": "clamp(1rem, 2vw, 2rem)"
+    },
+
+    "borderRadius": {
+      "small": "8px to 12px",
+      "medium": "16px to 20px",
+      "large": "24px to 32px",
+      "pill": "50px to 100px",
+      "circle": "50%"
+    },
+
+    "shadows": {
+      "subtle": "0 2px 8px rgba(0, 0, 0, 0.04)",
+      "medium": "0 4px 16px rgba(0, 0, 0, 0.08)",
+      "strong": "0 8px 32px rgba(0, 0, 0, 0.12)",
+      "dramatic": "0 20px 60px rgba(0, 0, 0, 0.15)",
+      "neonGreen": "0 8px 24px rgba(180, 255, 57, 0.4)"
+    },
+
+    "designPrinciples": {
+      "visual": [
+        "Bold, large typography with tight letter-spacing",
+        "High contrast black and white base with neon green accents",
+        "Generous white space and breathing room",
+        "Clean, minimal aesthetic without unnecessary decoration",
+        "Strategic use of rounded corners (20px-32px)",
+        "Floating elements with realistic shadows for depth"
+      ],
+      "layout": [
+        "Asymmetric layouts with visual interest",
+        "Split-screen hero sections (text left, visual right)",
+        "Card-based content organization",
+        "Overlapping elements for depth and dimension",
+        "Responsive grid systems with auto-fit",
+        "Full-width sections with contained content"
+      ],
+      "interaction": [
+        "Smooth transitions (0.3s-0.4s)",
+        "Lift on hover for cards and buttons",
+        "Subtle animations for floating elements",
+        "Clear visual feedback on interactive elements",
+        "Neon green for primary actions and highlights"
+      ],
+      "typography": [
+        "Extra large hero text (5rem+)",
+        "Tight line-height for headlines (1.1-1.2)",
+        "Negative letter-spacing for large text (-0.02em to -0.03em)",
+        "Clear hierarchy with size and weight",
+        "Readable body text with 1.6-1.7 line-height"
+      ],
+      "color": [
+        "Monochromatic base (black, white, grays)",
+        "Single accent color (neon green #b4ff39)",
+        "High contrast for readability",
+        "Dark cards with light text for emphasis",
+        "Minimal color palette for sophistication"
+      ]
+    },
+
+    "contentPatterns": {
+      "heroPattern": {
+        "structure": "Large headline + subtext + dual CTAs + floating visual elements",
+        "headline": "Bold statement with line breaks for emphasis",
+        "subtext": "2-3 lines explaining value proposition",
+        "ctas": "Primary black button + secondary text link",
+        "visual": "Laptop mockup or product imagery with floating stats cards"
+      },
+      
+      "statsSection": {
+        "layout": "Grid of dark cards with large numbers",
+        "cardContent": "Number + label + optional icon/visual",
+        "accentColor": "Neon green for plus signs and highlights",
+        "background": "White or light gray section"
+      },
+      
+      "serviceSection": {
+        "headline": "Large, bold statement",
+        "description": "Paragraph explaining approach/methodology",
+        "visual": "Team photo or process imagery",
+        "overlay": "Text overlay on image (e.g., 'HOW WE WORK')",
+        "cta": "Play button or learn more button"
+      },
+      
+      "trustSection": {
+        "label": "Small text like 'Trusted by the world's biggest brands'",
+        "logos": "Grayscale company logos in a row",
+        "style": "Subtle, not overpowering",
+        "spacing": "Even distribution with generous gaps"
+      }
+    },
+
+    "responsive": {
+      "breakpoints": {
+        "mobile": "< 768px",
+        "tablet": "768px - 1024px",
+        "desktop": "> 1024px",
+        "wide": "> 1400px"
+      },
+      "mobileAdjustments": {
+        "heroLayout": "Stack vertically (text top, visual bottom)",
+        "fontSize": "Reduce by 20-30% using clamp()",
+        "padding": "Reduce to 1.5rem - 2rem",
+        "grid": "Single column",
+        "navigation": "Hamburger menu",
+        "cards": "Full width with reduced padding"
+      }
+    },
+
+    "accessibility": {
+      "contrast": {
+        "textOnWhite": "#000000 (21:1 ratio)",
+        "textOnBlack": "#ffffff (21:1 ratio)",
+        "greenOnWhite": "Ensure 4.5:1 minimum",
+        "greenOnBlack": "High contrast maintained"
+      },
+      "focusStates": {
+        "outline": "2px solid with 2px offset",
+        "color": "#000000 or #b4ff39",
+        "visible": "Always visible on keyboard navigation"
+      },
+      "motion": {
+        "prefersReducedMotion": "Disable animations and transitions",
+        "respectUserPreferences": true
+      }
+    },
+
+    "usageGuidelines": {
+      "buttons": "Use black for primary actions, neon green for special CTAs like play buttons",
+      "cards": "Dark cards for stats/emphasis, light cards for content",
+      "typography": "Go bold and large for headlines, keep body text readable",
+      "spacing": "Use generous white space, don't crowd elements",
+      "color": "Stick to black/white/gray base, use green sparingly for maximum impact",
+      "images": "Use high-quality, professional imagery with subtle treatments",
+      "animations": "Keep subtle and purposeful, avoid excessive motion",
+      "layout": "Embrace asymmetry and overlapping elements for visual interest"
+    }
+  }
+}

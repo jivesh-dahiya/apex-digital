@@ -1,0 +1,478 @@
+{
+    "designSystem": {
+        "name": "ClickSpark Design System",
+        "version": "1.0.0",
+        "description": "A modern, warm, and professional design system for digital marketing agency websites with emphasis on trust, clarity, and conversion",
+        "colorPalette": {
+            "primary": {
+                "red": "#D34E4E",
+                "orange": "#CE7E5A",
+                "gold": "#DDC57A",
+                "usage": "Gradients, accents, highlights, brand elements"
+            },
+            "cta": {
+                "yellow": "#FFD700",
+                "yellowHover": "#FFC700",
+                "textOnYellow": "#000000",
+                "usage": "Primary buttons, hover states, call-to-action elements"
+            },
+            "neutral": {
+                "darkBrown": "#2b1a14",
+                "mediumBrown": "#8b6f5c",
+                "lightBrown": "#6b5444",
+                "usage": "Text hierarchy - dark for headings, medium for body, light for tertiary"
+            },
+            "background": {
+                "white": "#ffffff",
+                "cream": "#fef9f3",
+                "lightCream": "#fef5f0",
+                "warmCream": "#fefdfb",
+                "usage": "Page backgrounds, card backgrounds, section alternation"
+            },
+            "borders": {
+                "light": "rgba(245, 230, 211, 0.4)",
+                "medium": "rgba(245, 230, 211, 0.6)",
+                "strong": "rgba(245, 230, 211, 0.8)",
+                "usage": "Card borders, dividers, subtle separations"
+            },
+            "shadows": {
+                "soft": "0 1px 3px rgba(0, 0, 0, 0.02), 0 8px 24px rgba(43, 26, 20, 0.04)",
+                "medium": "0 4px 6px rgba(0, 0, 0, 0.03), 0 20px 40px rgba(43, 26, 20, 0.08)",
+                "strong": "0 12px 32px rgba(211, 78, 78, 0.5)",
+                "yellow": "0 8px 16px rgba(255, 215, 0, 0.4)",
+                "usage": "Layered shadows for depth and elevation"
+            }
+        },
+        "typography": {
+            "fontFamilies": {
+                "display": {
+                    "primary": "Playfair Display, serif",
+                    "secondary": "Zalando Sans Expanded, sans-serif",
+                    "usage": "Large headings, hero titles, impactful statements"
+                },
+                "body": {
+                    "primary": "Roboto, sans-serif",
+                    "secondary": "Lato, sans-serif",
+                    "usage": "Paragraphs, descriptions, readable content"
+                },
+                "ui": {
+                    "primary": "Poppins, sans-serif",
+                    "secondary": "Raleway, sans-serif",
+                    "usage": "Buttons, navigation, UI elements"
+                },
+                "accent": {
+                    "primary": "Montserrat, sans-serif",
+                    "secondary": "Zalando Sans SemiExpanded, sans-serif",
+                    "usage": "Badges, labels, eyebrow text, uppercase elements"
+                }
+            },
+            "scale": {
+                "hero": "clamp(2.6rem, 4.8vw, 3.6rem)",
+                "h1": "clamp(2.25rem, 6vw, 3.5rem)",
+                "h2": "clamp(2rem, 5vw, 2.75rem)",
+                "h3": "1.375rem",
+                "h4": "1.25rem",
+                "body": "1.0625rem",
+                "bodySmall": "0.9375rem",
+                "label": "0.8125rem",
+                "usage": "Fluid typography with clamp for responsive scaling"
+            },
+            "weights": {
+                "light": 300,
+                "regular": 400,
+                "medium": 500,
+                "semibold": 600,
+                "bold": 700,
+                "extrabold": 900
+            },
+            "lineHeights": {
+                "tight": 1.2,
+                "normal": 1.5,
+                "relaxed": 1.7,
+                "usage": "Tight for headings, relaxed for body text"
+            },
+            "letterSpacing": {
+                "tight": "-0.02em",
+                "normal": "0",
+                "wide": "0.1em",
+                "wider": "0.15em",
+                "usage": "Tight for large headings, wide for uppercase labels"
+            }
+        },
+        "spacing": {
+            "scale": {
+                "xs": "0.25rem",
+                "sm": "0.5rem",
+                "md": "1rem",
+                "lg": "1.5rem",
+                "xl": "2rem",
+                "2xl": "2.5rem",
+                "3xl": "3rem",
+                "4xl": "4rem",
+                "5xl": "5rem",
+                "6xl": "6rem",
+                "7xl": "7rem"
+            },
+            "responsive": {
+                "sectionPadding": "clamp(4rem, 8vw, 7rem)",
+                "cardPadding": "clamp(2rem, 3vw, 2.5rem)",
+                "containerGap": "clamp(2rem, 4vw, 4rem)",
+                "usage": "Fluid spacing that adapts to viewport"
+            }
+        },
+        "borderRadius": {
+            "small": "12px",
+            "medium": "14px",
+            "large": "20px",
+            "xlarge": "24px",
+            "pill": "50px",
+            "usage": "Small for buttons, large for cards, pill for badges"
+        },
+        "components": {
+            "buttons": {
+                "primary": {
+                    "background": "#FFD700",
+                    "color": "#000000",
+                    "padding": "0.875rem 1.75rem",
+                    "borderRadius": "12px",
+                    "fontWeight": 600,
+                    "fontFamily": "Poppins, sans-serif",
+                    "shadow": "0 4px 12px rgba(255, 215, 0, 0.4)",
+                    "hover": {
+                        "background": "#FFC700",
+                        "transform": "translateY(-2px)",
+                        "shadow": "0 8px 24px rgba(255, 215, 0, 0.6)"
+                    },
+                    "usage": "Primary CTAs, main actions"
+                },
+                "secondary": {
+                    "background": "#FFD700",
+                    "color": "#000000",
+                    "border": "1.5px solid #FFD700",
+                    "padding": "0.875rem 1.75rem",
+                    "borderRadius": "12px",
+                    "fontWeight": 600,
+                    "hover": {
+                        "background": "#FFC700",
+                        "transform": "translateY(-2px)"
+                    },
+                    "usage": "Secondary actions, alternative CTAs"
+                },
+                "iconAnimation": {
+                    "transform": "translateX(4px)",
+                    "transition": "0.3s ease"
+                }
+            },
+            "cards": {
+                "base": {
+                    "background": "#ffffff",
+                    "borderRadius": "20px",
+                    "border": "1px solid rgba(245, 230, 211, 0.6)",
+                    "padding": "2.5rem",
+                    "shadow": "0 1px 3px rgba(0, 0, 0, 0.02), 0 8px 24px rgba(43, 26, 20, 0.04)",
+                    "transition": "all 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
+                },
+                "hover": {
+                    "transform": "translateY(-12px) scale(1.02)",
+                    "shadow": "0 4px 6px rgba(0, 0, 0, 0.03), 0 20px 40px rgba(43, 26, 20, 0.08)",
+                    "borderColor": "rgba(206, 126, 90, 0.3)"
+                },
+                "topBar": {
+                    "height": "4px",
+                    "background": "#FFD700",
+                    "position": "absolute top-0 left-0",
+                    "width": "100%",
+                    "transform": "scaleX(0) on default, scaleX(1) on hover",
+                    "transition": "0.4s ease"
+                },
+                "icon": {
+                    "size": "56px to 64px",
+                    "background": "rgba(211, 78, 78, 0.1) gradient",
+                    "borderRadius": "14px to 16px",
+                    "color": "#D34E4E",
+                    "hover": {
+                        "background": "#FFD700",
+                        "color": "#000000",
+                        "transform": "scale(1.1) rotate(5deg to 360deg)",
+                        "shadow": "0 8px 16px rgba(255, 215, 0, 0.4)"
+                    }
+                },
+                "usage": "Service cards, industry cards, feature cards"
+            },
+            "badges": {
+                "style": {
+                    "display": "inline-block",
+                    "padding": "0.5rem 1.25rem",
+                    "background": "linear-gradient(135deg, rgba(211, 78, 78, 0.08), rgba(206, 126, 90, 0.08))",
+                    "color": "#D34E4E",
+                    "fontSize": "0.8125rem",
+                    "fontWeight": 600,
+                    "textTransform": "uppercase",
+                    "letterSpacing": "0.1em to 0.15em",
+                    "borderRadius": "50px",
+                    "border": "1px solid rgba(211, 78, 78, 0.2)",
+                    "fontFamily": "Montserrat, sans-serif"
+                },
+                "usage": "Section labels, eyebrow text, category tags"
+            },
+            "forms": {
+                "input": {
+                    "padding": "0.875rem 1rem",
+                    "borderRadius": "8px to 12px",
+                    "border": "1px solid rgba(245, 230, 211, 0.6)",
+                    "fontSize": "1rem",
+                    "transition": "all 0.3s ease",
+                    "focus": {
+                        "borderColor": "#D34E4E",
+                        "outline": "none",
+                        "shadow": "0 0 0 3px rgba(211, 78, 78, 0.1)"
+                    }
+                },
+                "label": {
+                    "fontSize": "0.875rem",
+                    "fontWeight": 600,
+                    "color": "#2b1a14",
+                    "marginBottom": "0.5rem"
+                },
+                "error": {
+                    "color": "#D34E4E",
+                    "fontSize": "0.8125rem",
+                    "marginTop": "0.25rem"
+                }
+            },
+            "navigation": {
+                "navbar": {
+                    "position": "sticky top-0",
+                    "background": "linear-gradient(180deg, #fefdfb, #fef9f3)",
+                    "backdropFilter": "blur(10px)",
+                    "borderBottom": "1px solid rgba(245, 230, 211, 0.4)",
+                    "shadow": "0 1px 3px rgba(43, 26, 20, 0.03)",
+                    "zIndex": 100
+                },
+                "links": {
+                    "color": "#8b6f5c",
+                    "fontWeight": 500,
+                    "transition": "all 0.3s ease",
+                    "hover": {
+                        "color": "#D34E4E"
+                    },
+                    "active": {
+                        "color": "#D34E4E",
+                        "underline": "2px solid gradient"
+                    }
+                },
+                "logo": {
+                    "fontWeight": 700,
+                    "background": "linear-gradient(135deg, #D34E4E, #CE7E5A)",
+                    "webkitBackgroundClip": "text",
+                    "webkitTextFillColor": "transparent"
+                }
+            }
+        },
+        "animations": {
+            "transitions": {
+                "fast": "0.15s ease",
+                "normal": "0.3s ease",
+                "slow": "0.4s ease",
+                "bounce": "cubic-bezier(0.68, -0.55, 0.265, 1.55)",
+                "smooth": "cubic-bezier(0.4, 0, 0.2, 1)"
+            },
+            "keyframes": {
+                "fadeInUp": {
+                    "from": "opacity: 0, translateY(30px)",
+                    "to": "opacity: 1, translateY(0)",
+                    "duration": "0.8s",
+                    "easing": "ease-out"
+                },
+                "fadeInLeft": {
+                    "from": "opacity: 0, translateX(-30px)",
+                    "to": "opacity: 1, translateX(0)",
+                    "duration": "0.8s"
+                },
+                "fadeInRight": {
+                    "from": "opacity: 0, translateX(30px)",
+                    "to": "opacity: 1, translateX(0)",
+                    "duration": "0.8s"
+                },
+                "float": {
+                    "keyframes": "0%: translate(0,0) scale(1), 33%: translate(30px,-30px) scale(1.1), 66%: translate(-20px,20px) scale(0.9), 100%: translate(0,0) scale(1)",
+                    "duration": "20s",
+                    "easing": "ease-in-out",
+                    "iteration": "infinite"
+                },
+                "pulse": {
+                    "keyframes": "0%: scale(1), 50%: scale(1.05), 100%: scale(1)",
+                    "duration": "2s",
+                    "easing": "ease-in-out",
+                    "iteration": "infinite"
+                },
+                "gradientShift": {
+                    "keyframes": "0%: background-position 0% 50%, 50%: background-position 100% 50%, 100%: background-position 0% 50%",
+                    "duration": "3s",
+                    "easing": "ease",
+                    "iteration": "infinite"
+                }
+            },
+            "hover": {
+                "cardLift": "translateY(-8px to -12px)",
+                "cardScale": "scale(1.02)",
+                "buttonLift": "translateY(-2px to -4px)",
+                "buttonScale": "scale(1.05)",
+                "iconRotate": "rotate(5deg to 360deg)",
+                "iconScale": "scale(1.1 to 1.2)"
+            },
+            "scroll": {
+                "threshold": "0.1 to 0.3",
+                "stagger": "0.1s delay between items",
+                "trigger": "intersection observer"
+            }
+        },
+        "layout": {
+            "grid": {
+                "columns": {
+                    "twoColumn": "1fr 1fr",
+                    "threeColumn": "repeat(3, 1fr)",
+                    "autoFit": "repeat(auto-fit, minmax(280px, 1fr))",
+                    "services": "repeat(auto-fit, minmax(340px, 1fr))",
+                    "industries": "repeat(auto-fit, minmax(260px, 1fr))"
+                },
+                "gap": {
+                    "small": "1.5rem",
+                    "medium": "2rem",
+                    "large": "2.5rem",
+                    "responsive": "clamp(2rem, 4vw, 4rem)"
+                }
+            },
+            "container": {
+                "maxWidth": "1200px to 1400px",
+                "padding": "0 1rem to 2rem",
+                "margin": "0 auto"
+            },
+            "sections": {
+                "padding": "clamp(4rem, 8vw, 7rem) 0",
+                "alternateBackground": "white and cream gradients"
+            }
+        },
+        "effects": {
+            "backgroundBlobs": {
+                "size": "300px to 500px",
+                "blur": "80px",
+                "opacity": "0.06 to 0.12",
+                "colors": [
+                    "rgba(211, 78, 78, 0.06)",
+                    "rgba(221, 197, 122, 0.08)"
+                ],
+                "animation": "float 8s to 20s infinite",
+                "position": "absolute, various corners"
+            },
+            "gradients": {
+                "primary": "linear-gradient(135deg, #D34E4E 0%, #CE7E5A 100%)",
+                "extended": "linear-gradient(135deg, #D34E4E 0%, #CE7E5A 50%, #DDC57A 100%)",
+                "background": "linear-gradient(180deg, #ffffff 0%, #fef9f3 100%)",
+                "text": "linear-gradient for webkit-background-clip"
+            },
+            "ripple": {
+                "element": "::after pseudo-element",
+                "initial": "width: 0, height: 0",
+                "hover": "width: 500px, height: 500px",
+                "background": "radial-gradient(circle, rgba(211, 78, 78, 0.1), transparent)",
+                "transition": "0.6s ease"
+            },
+            "imageBlend": {
+                "mixBlendMode": "multiply",
+                "opacity": "0.95",
+                "filter": "contrast(1.1) brightness(1.05)"
+            }
+        },
+        "responsive": {
+            "breakpoints": {
+                "mobile": "< 768px",
+                "tablet": "768px - 900px",
+                "desktop": "> 900px"
+            },
+            "mobileAdjustments": {
+                "grid": "single column (1fr)",
+                "padding": "reduced by 20-30%",
+                "fontSize": "smaller clamp values",
+                "navigation": "hamburger menu with full-screen overlay",
+                "buttons": "full width",
+                "animations": "simplified or disabled"
+            }
+        },
+        "accessibility": {
+            "motionPreference": {
+                "query": "@media (prefers-reduced-motion: reduce)",
+                "action": "disable animations, remove transforms"
+            },
+            "colorContrast": {
+                "textOnWhite": "#2b1a14 (dark brown)",
+                "textOnYellow": "#000000 (black)",
+                "minRatio": "4.5:1 for body text, 3:1 for large text"
+            },
+            "focusStates": {
+                "outline": "2px solid with offset",
+                "shadow": "0 0 0 3px rgba(211, 78, 78, 0.1)",
+                "visible": "always visible on keyboard navigation"
+            }
+        },
+        "designPrinciples": {
+            "visual": [
+                "Warm and professional color palette",
+                "Consistent yellow (#FFD700) for all CTAs with black text",
+                "Soft shadows for depth without harshness",
+                "Generous white space for breathing room",
+                "Card-based layouts for content organization"
+            ],
+            "interaction": [
+                "Smooth transitions (0.3s to 0.4s)",
+                "Hover states provide clear feedback",
+                "Yellow highlights on interactive elements",
+                "Icon animations (rotation, scale, color change)",
+                "Scroll-triggered reveals with stagger"
+            ],
+            "typography": [
+                "Clear hierarchy with size and weight",
+                "Fluid typography using clamp()",
+                "Serif for display, sans-serif for body",
+                "Uppercase for labels with wide letter-spacing",
+                "Readable line-heights (1.7 for body)"
+            ],
+            "layout": [
+                "Responsive grid systems",
+                "Two-column layouts on desktop",
+                "Single column on mobile",
+                "Consistent spacing scale",
+                "Alternating section backgrounds"
+            ]
+        },
+        "contentPatterns": {
+            "hero": {
+                "structure": "Badge + Large Title + Subtitle + Dual CTAs + Optional Image",
+                "titlePattern": "Problem/Solution statement with highlighted keyword",
+                "ctaPattern": "Primary action (Book a Call) + Secondary action (Learn More)"
+            },
+            "serviceCard": {
+                "structure": "Icon + Title + Description + Bullet Points + Optional CTA",
+                "iconPosition": "top-left",
+                "bulletPoints": "3 items maximum",
+                "hoverEffect": "yellow icon background, top bar reveal"
+            },
+            "section": {
+                "structure": "Badge + Heading + Subtitle + Content Grid",
+                "badgeStyle": "uppercase, small, colored",
+                "headingStyle": "large, bold, with optional gradient text",
+                "gridPattern": "2-4 columns on desktop, 1 column on mobile"
+            }
+        },
+        "usageGuidelines": {
+            "buttons": "Use yellow background with black text for all primary CTAs. Reserve gradient buttons for special cases.",
+            "cards": "Always include hover states with yellow top bar and icon background change.",
+            "spacing": "Use clamp() for responsive spacing. Maintain consistent vertical rhythm.",
+            "colors": "Stick to defined palette. Use gradients sparingly for accents and highlights.",
+            "animations": "Keep transitions under 0.5s. Use cubic-bezier for bounce effects. Respect prefers-reduced-motion.",
+            "typography": "Use display fonts for headings, body fonts for content. Maintain 1.7 line-height for readability.",
+            "images": "Use blend modes for seamless integration. Optimize for performance.",
+            "forms": "Provide clear labels, validation, and error states. Use yellow for submit buttons."
+        }
+    }
+}

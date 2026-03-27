@@ -1,0 +1,104 @@
+{
+"meta": {
+"name": "CleanCardShowcase",
+"description": "Minimal, monochrome card grid with rounded panels, strong hierarchy, and subtle depth.",
+"usage": "Use as reference for replicating similar card-based showcases in Cursor/Kiro."
+},
+"layout": {
+"grid": {
+"columns": "auto-fill",
+"minCardWidth": "300px",
+"gap": "24px",
+"alignment": "top",
+"rowHeight": "auto"
+},
+"sectionPadding": "48px 32px",
+"maxWidth": "none",
+"horizontalScroll": false
+},
+"palette": {
+"background": "#f6f5fb",
+"card": "#ffffff",
+"textPrimary": "#1c1c1f",
+"textSecondary": "#2f3137",
+"badge": "#1c1c1f",
+"iconFill": "#000000",
+"shadow": "rgba(0,0,0,0.08)"
+},
+"typography": {
+"fontFamily": "Geometric sans (e.g., Inter/Manrope/Neue Haas Grotesk)",
+"title": {
+"size": "22-24px",
+"weight": 700,
+"lineHeight": 1.25,
+"letterSpacing": "-0.01em"
+},
+"eyebrow": {
+"size": "13-14px",
+"weight": 700,
+"transform": "none",
+"tracking": "0.02em"
+},
+"body": {
+"size": "15-16px",
+"weight": 500,
+"lineHeight": 1.6
+}
+},
+"cards": {
+"shape": {
+"radius": "22-26px",
+"border": "none"
+},
+"padding": "24px",
+"gapInternal": "10px between blocks",
+"shadow": "0 12px 28px rgba(0,0,0,0.08)",
+"hover": {
+"translate": "0px -2px",
+"shadow": "0 16px 36px rgba(0,0,0,0.10)",
+"duration": "180ms"
+},
+"contentOrder": [
+"eyebrow",
+"titleRow",
+"body"
+],
+"titleRow": {
+"iconSize": "28-32px",
+"iconBackground": "none",
+"spacing": "10px"
+},
+"eyebrowStyle": "left-aligned, upper-left corner, no pill, strong weight",
+"bodyWidth": "90% of card width"
+},
+"icons": {
+"style": "solid, flat, monochrome glyphs",
+"size": "28-32px",
+"alignment": "baseline with title",
+"color": "#000000",
+"background": "transparent"
+},
+"spacing": {
+"cardCornerRadius": "24px avg",
+"gridGap": "24px",
+"sectionTopBottom": "48px",
+"titleSpacing": "6-8px after title",
+"eyebrowSpacing": "12px before title"
+},
+"hierarchy": {
+"eyebrow": "small caps/strong weight to set context",
+"title": "largest weight and size in card",
+"body": "medium weight, balanced line-height",
+"icon": "left of title, matching title size for visual anchor"
+},
+"effects": {
+"shadow": "soft drop shadow under each card",
+"background": "very light gray/lilac page backdrop",
+"hover": "slight lift and stronger shadow"
+},
+"alignment": {
+"text": "left-aligned",
+"iconAndTitle": "centered vertically",
+"cards": "top-aligned in grid"
+}
+}

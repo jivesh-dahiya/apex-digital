@@ -1,0 +1,121 @@
+{
+  "meta": {
+    "name": "UsualMoneyTheme",
+    "description": "High-contrast financial product aesthetic with bold hero, neon gradients, and crisp modular layout.",
+    "source": "Derived from visual analysis of https://usual.money/",
+    "usage": "Reference for recreating similar UI in Cursor/Kiro without copying site content."
+  },
+  "layout": {
+    "grid": {
+      "type": "12-column",
+      "maxWidth": "1200-1280px",
+      "gutters": "24px",
+      "sectionPadding": "96px top/bottom desktop, 64px tablet, 48px mobile"
+    },
+    "hero": {
+      "height": "min(90vh, 760px)",
+      "alignment": "left column content, right visual",
+      "background": "dark with subtle vertical gradient and glow",
+      "ctaStack": "primary then secondary inline"
+    },
+    "cards": {
+      "radius": "20-22px",
+      "shadow": "0 20px 60px rgba(0,0,0,0.35)",
+      "border": "1px solid rgba(255,255,255,0.08)",
+      "padding": "24-28px desktop, 20px mobile",
+      "spacing": "12px between text blocks"
+    },
+    "sections": [
+      "hero",
+      "value props grid",
+      "product/feature spotlight",
+      "stats or trust bar",
+      "faq or explainer accordions",
+      "cta footer"
+    ]
+  },
+  "palette": {
+    "background": "#0d0d10",
+    "backgroundAlt": "#121217",
+    "surface": "#15151c",
+    "card": "#181821",
+    "primary": "#a2f7ff",
+    "primaryAccent": "#4df3d4",
+    "secondary": "#ffffff",
+    "textPrimary": "#f7f8fb",
+    "textSecondary": "rgba(247,248,251,0.72)",
+    "muted": "rgba(247,248,251,0.56)",
+    "border": "rgba(255,255,255,0.08)",
+    "shadow": "rgba(0,0,0,0.45)",
+    "gradients": {
+      "glow": "linear-gradient(180deg, rgba(80,255,220,0.24), rgba(0,0,0,0))",
+      "cta": "linear-gradient(135deg, #a2f7ff 0%, #4df3d4 60%, #61ffe9 100%)",
+      "badge": "linear-gradient(135deg, rgba(162,247,255,0.18), rgba(77,243,212,0.22))"
+    }
+  },
+  "typography": {
+    "fontFamily": "Modern geometric sans (e.g., Neue Haas Grotesk / Inter / Space Grotesk)",
+    "heroTitle": { "size": "48-64px", "weight": 700, "lineHeight": 1.05, "tracking": "-0.02em" },
+    "sectionTitle": { "size": "32-40px", "weight": 700, "lineHeight": 1.1 },
+    "eyebrow": { "size": "13-14px", "weight": 700, "letterSpacing": "0.12em", "transform": "uppercase" },
+    "body": { "size": "16-18px", "weight": 500, "lineHeight": 1.6 },
+    "label": { "size": "13px", "weight": 600, "letterSpacing": "0.08em" },
+    "numbers": { "size": "36-44px", "weight": 700, "fontFeatureSettings": "tnum" }
+  },
+  "components": {
+    "button": {
+      "primary": {
+        "bg": "gradient:cta",
+        "text": "#0d0d10",
+        "radius": "12px",
+        "shadow": "0 12px 32px rgba(77,243,212,0.35)",
+        "hover": "lift + stronger glow"
+      },
+      "secondary": {
+        "bg": "transparent",
+        "text": "#f7f8fb",
+        "border": "1px solid rgba(255,255,255,0.16)",
+        "radius": "12px",
+        "hover": "border-lighten, subtle scale"
+      }
+    },
+    "badge": {
+      "style": "pill",
+      "padding": "6px 12px",
+      "bg": "gradient:badge",
+      "text": "#a2f7ff",
+      "border": "1px solid rgba(162,247,255,0.35)"
+    },
+    "card": {
+      "header": "icon or glyph left, title right",
+      "body": "short copy, 2-4 lines",
+      "footer": "tiny label or arrow indicator",
+      "hover": "subtle translateY(-3px) and brighter border"
+    },
+    "nav": {
+      "position": "top-fixed with blur",
+      "bg": "rgba(13,13,16,0.72) with backdrop-filter: blur(12px)",
+      "links": "uppercase/label style, even spacing"
+    },
+    "accordion": {
+      "bg": "#181821",
+      "border": "1px solid rgba(255,255,255,0.08)",
+      "radius": "16px",
+      "icon": "plus/minus, line weight 2px"
+    }
+  },
+  "imagery": {
+    "style": "3D/soft-illustrated financial product mockups, neon glows, gradients",
+    "treatment": "dark surfaces with turquoise/aqua highlights, blurred glow halos"
+  },
+  "motion": {
+    "hover": "80-150ms ease-out",
+    "heroVisual": "slow ambient glow/pulse",
+    "scroll": "fade+translate-up for cards and sections"
+  },
+  "alignment": {
+    "text": "left-aligned across sections",
+    "cta": "inline pair (primary then ghost)",
+    "cards": "top-aligned content with consistent gutters"
+  }
+}
